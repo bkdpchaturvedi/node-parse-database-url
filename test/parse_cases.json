@@ -146,5 +146,83 @@
       ],
       "database": "herokudb"
     }
+  },
+  {
+    "desc": "MongoDB URL with username and host",
+    "url": "mongodb+srv://someuser@server.heroku.com/herokudb",
+    "config": {
+      "driver": "mongodb",
+      "user": "someuser",
+      "host": "server.heroku.com",
+      "hosts": [
+        {
+          "host": "server.heroku.com"
+        }
+      ],
+      "database": "herokudb"
+    }
+  },
+  {
+    "desc": "MongoDB URL with username/password and host/port",
+    "url": "mongodb+srv://user:pass@server.heroku.com:1337/herokudb",
+    "config": {
+      "driver": "mongodb",
+      "user": "user",
+      "password": "pass",
+      "host": "server.heroku.com",
+      "port": "1337",
+      "hosts": [
+        {
+          "host": "server.heroku.com",
+          "port": "1337"
+        }
+      ],
+      "database": "herokudb"
+    }
+  },
+  {
+    "desc": "MongoDB URL with username/password and multiple hosts/ports (Issue #6)",
+    "url": "mongodb+srv://user:pass@server1.heroku.com:1337,server2.heroku.com:1338,server3.heroku.com:1339/herokudb",
+    "config": {
+      "driver": "mongodb",
+      "user": "user",
+      "password": "pass",
+      "hosts": [
+        {
+          "host": "server1.heroku.com",
+          "port": "1337"
+        },
+        {
+          "host": "server2.heroku.com",
+          "port": "1338"
+        },
+        {
+          "host": "server3.heroku.com",
+          "port": "1339"
+        }
+      ],
+      "database": "herokudb"
+    }
+  },
+  {
+    "desc": "MongoDB+srv URL with username/password and single hosts/ports (Issue #6)",
+    "url": "mongodb+srv://user:pass@server.heroku.com/admin?ssl=true&authSource=admin&retryWrites=true&w=majority",
+    "config": {
+      "driver": "mongodb",
+      "user": "user",
+      "password": "pass",
+      "host": "server.heroku.com",
+      "hosts": [
+        {
+          "host": "server.heroku.com"
+          
+        }
+      ],
+      "ssl":"true",
+      "authSource":"admin",
+      "retryWrites":"true",
+      "w":"majority",
+      "database": "admin"
+    }
   }
 ]
