@@ -1,6 +1,6 @@
 {
   "name": "parse-database-url",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Database configuration URL parser for node.js",
   "keywords": [
     "database",
@@ -9,15 +9,15 @@
     "heroku",
     "database_url"
   ],
-  "homepage": "https://github.com/pwnall/node-parse-database-url",
-  "author": "Victor Costan <victor@costan.us> (http://www.costan.us)",
+  "homepage": "https://github.com/bkdpchaturvedi/node-parse-database-url",
+  "author": "bkdpchaturvedi",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pwnall/node-parse-database-url.git"
+    "url": "https://github.com/bkdpchaturvedi/node-parse-database-url.git"
   },
   "bugs": {
-    "url": "https://github.com/pwnall/node-parse-database-url/issues"
+    "url": "https://github.com/bkdpchaturvedi/node-parse-database-url/issues"
   },
   "engines": {
     "node": ">= 0.6"
